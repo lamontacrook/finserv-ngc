@@ -2,6 +2,45 @@
 
 main .hero-container > div {
   max-width: unset;
+  position: relative;
+}
+
+main .hero > .hero-content {
+  bottom: 10px;
+  right: 10px;
+  width: 50%;
+  padding: 18px;
+  position: absolute;
+  text-align: center;
+  background-color: rgb(80,80,90,.5);
+  border-radius: 10px;
+}
+
+main .hero > .hero-content h1, 
+main .hero > .hero-content h2 {
+  color: white;
+  text-shadow: 1px 1px 2px gray;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+main .hero > .hero-content h1::after {
+  content:' ';
+  position:relative;
+  display:block;
+  top:60%;
+  height:1px;
+  width: 500px;
+  margin-top: 20px;
+  background: white;
+  left:50%;
+  z-index:1;
+  transform:translateX(-50%);
+}
+
+main .hero > .hero-content img {
+  width: 100%;
+  object-fit: contain;
 }
   
 main .hero-container {
@@ -12,6 +51,7 @@ main .hero {
   position: relative;
   padding: 32px;
   min-height: 300px;
+  height: 80vh;
 }
 
 main .hero h1 {
@@ -30,6 +70,11 @@ main .hero picture {
   right: 0;
   object-fit: cover;
   box-sizing: border-box;
+}
+
+main .hero-content picture {
+  position: relative;
+  z-index: 1;
 }
 
 main .hero img {

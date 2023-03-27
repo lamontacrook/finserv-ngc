@@ -21,6 +21,7 @@ window.hlx.RUM_GENERATION = 'project-1'; // add your RUM generation information 
  * @param {Element} main The container element
  */
 function buildHeroBlock(main) {
+  return;
   const h1 = main.querySelector('h1');
   const picture = main.querySelector('picture');
   // eslint-disable-next-line no-bitwise

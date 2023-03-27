@@ -12,7 +12,7 @@
 
  :root {
   /* colors */
-  --link-color: #035fe6;
+  --link-color: #0033A0;
   --link-hover-color: #136ff6;
   --background-color: #fff;
   --overlay-background-color: #eee;
@@ -20,8 +20,8 @@
   --text-color: #000;
 
   /* fonts */
-  --body-font-family: 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
-  --heading-font-family: var(--body-font-family);
+  --body-font-family: adobe-clean-light, 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
+  --heading-font-family: adobe-clean-regular, 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;;
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
   /* body sizes */
@@ -38,18 +38,19 @@
   --heading-font-size-xs: 18px;
 
   /* nav height */
-  --nav-height: 64px;
+  --nav-height: 0; 
+  /* 64px; */
 
 }
 
 @media (min-width: 900px) {
   :root {
-    --heading-font-size-xxl: 60px;
-    --heading-font-size-xl: 48px;
-    --heading-font-size-l: 36px;
-    --heading-font-size-m: 30px;
-    --heading-font-size-s: 24px;
-    --heading-font-size-xs: 22px;
+    --heading-font-size-xxl: 48px;
+    --heading-font-size-xl: 36px;
+    --heading-font-size-l: 30px;
+    --heading-font-size-m: 24px;
+    --heading-font-size-s: 22px;
+    --heading-font-size-xs: 18px;
   }
 }
 
@@ -89,8 +90,8 @@ h5 { font-size: var(--heading-font-size-s) }
 h6 { font-size: var(--heading-font-size-xs) }
 
 p, dl, ol, ul, pre, blockquote {
-  margin-top: 1em;
-  margin-bottom: 1em;
+  /* margin-top: 1em;
+  margin-bottom: 1em; */
 }
 
 hr {
@@ -221,18 +222,18 @@ main img {
 }
 
 main .section {
-  padding: 64px 16px;
+  /* padding: 64px 16px; */
 }
 
 @media (min-width: 600px) {
   main .section {
-    padding: 64px 32px;
+    /* padding: 64px 32px; */
   }
 }
 
 @media (min-width: 900px) {
   .section > div {
-    max-width: 1200px;
+    max-width: 1920px;
     margin: auto;
   }
 }

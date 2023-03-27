@@ -1,1 +1,11 @@
 /* below the fold CSS goes here */
+
+@font-face {
+  font-family: adobe-clean-regular;
+  src: url('./fonts/AdobeClean-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: adobe-clean-light;
+  src: url('./fonts/AdobeClean-light.ttf') format('truetype');
+}
